@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Stocks · 中国AI产业链选股表 · Brassivo Research</title>
+<meta name="description" content="中国AI与半导体供应链选股表：A股/港股/中概科技股按供应链瓶颈环节（晶圆代工、AI芯片、光模块、先进封装、半导体设备、EDA、液冷电源等）质量×定价框架排序，每周更新。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://china.brassivo.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brassivo Research">
+<meta property="og:title" content="China Stocks · 中国AI产业链选股表">
+<meta property="og:description" content="15个AI产业链环节的质量打分、Forward PE与操作分层，每周自动更新。">
+<meta property="og:url" content="https://china.brassivo.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"中国AI产业链选股表","url":"https://china.brassivo.com/","inLanguage":"zh-CN","creator":{"@type":"Organization","name":"Brassivo Research","url":"https://brassivo.com/"},"description":"AI产业链15个环节按利润池持续性×边际变化×定价未充分程度排序，含紧缺度/扩产难度/定价权打分、龙头Forward PE、操作分层与可证伪条款，每周更新。","license":"https://brassivo.com/","isAccessibleForFree":true}
+</script>
+<script>(function(){var m=document.cookie.match(/brassivo_theme=(dark|light)/);document.documentElement.setAttribute('data-theme',m?m[1]:'light');})();</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d5449771637e48d198e5ad33e9d26d78"}'></script>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --card2:#f0f2f5; --line:#e2e5ea;
+    --txt:#15181e; --mut:#3e4552; --hi:#0b0d12;
+    --hot:#e2554a; --warm:#e0913a; --cool:#3a9b78; --neu:#6b7280;
+    --core:rgba(58,155,120,.08); --debate:rgba(224,145,58,.08); --watch:rgba(107,114,128,.06);
+  }
+  html[data-theme=dark]{
+    --bg:#171a21; --card:#1f232c; --card2:#272c37; --line:#343a47;
+    --txt:#edeff4; --mut:#b6bec9; --hi:#f5f7fa;
+    --core:rgba(58,155,120,.10); --debate:rgba(224,145,58,.10); --watch:rgba(107,114,128,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+  nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);
+      display:flex;gap:4px;padding:10px 18px;align-items:center;overflow-x:auto}
+  nav .brand{font-size:14px;font-weight:700;margin-right:12px;white-space:nowrap;color:var(--txt);text-decoration:none}
+  nav .brand span{color:var(--mut);font-weight:400}
+  nav a{color:var(--mut);text-decoration:none;font-size:13px;padding:5px 10px;border-radius:6px;white-space:nowrap}
+  nav a:hover{color:var(--txt);background:var(--card)}
+  main{padding:24px}
+  .wrap{max-width:1200px;margin:0 auto}
+  h1{font-size:22px;font-weight:600;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:12px}
+  .legend{font-size:12px;color:var(--mut);margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px}
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px}
+  table{width:100%;min-width:960px;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+  @media(min-width:1000px){table{min-width:0}}
+  th,td{padding:9px 10px;text-align:left;font-size:12.5px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--card2);color:var(--mut);font-weight:500;font-size:11.5px;white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  td.num{text-align:center;font-weight:600}
+  .rank{font-weight:700;font-size:14px;text-align:center;color:var(--hi)}
+  .seg{font-weight:600;color:var(--hi);font-size:13px;white-space:nowrap}
+  .leaders{color:var(--mut);font-size:11.5px;white-space:nowrap}
+  .verdict{font-size:12px}
+  tr.core td{background:var(--core)}
+  tr.debate td{background:var(--debate)}
+  tr.watch td{background:var(--watch)}
+  tr.out td{opacity:.72}
+  .sect{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-top:16px}
+  .sect h3{margin:0 0 8px;font-size:14px;color:var(--hi)}
+  .sect li{font-size:12.5px;color:var(--mut);margin:4px 0}
+  .sect ol{margin:0;padding-left:20px}
+  .sect ul{margin:0;padding-left:20px}
+  .foot{color:var(--mut);font-size:11px;margin-top:14px}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  #saveImg{flex:none;cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:8px;white-space:nowrap}
+  #saveImg:hover{border-color:var(--warm);color:var(--warm)}
+  #saveImg:disabled{opacity:.5;cursor:default}
+</style>
+</head>
+<body>
+<nav>
+  <a href="https://brassivo.com" class="brand">Brassivo <span>· China Stocks</span></a>
+  <a href="https://investment.brassivo.com" style="margin-left:auto">Liquidity →</a><a href="https://stocks.brassivo.com">Global Stocks →</a>
+  <button onclick="(function(){var d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.cookie='brassivo_theme='+d+'; domain=.brassivo.com; path=/; max-age=31536000; SameSite=Lax';document.documentElement.setAttribute('data-theme',d);})()" style="cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:12px;padding:4px 10px;border-radius:6px;white-space:nowrap">深色/浅色</button>
+</nav>
+<main>
+<div class="wrap">
+  <div class="topbar">
+    <h1 id="title"></h1>
+    <button id="saveImg">📷 保存为图片</button>
+  </div>
+  <div class="sub" id="sub"></div>
+  <div class="legend" id="legend"></div>
+  <div class="sect" style="margin:0 0 16px">
+    <h3>📐 打分锚点（硬数据口径，分数不许脱离依据）</h3>
+    <ul id="anchors"></ul>
+  </div>
+  <div class="tblwrap"><table>
+    <thead><tr>
+      <th style="width:36px">潜力</th><th>环节 / 依据</th><th style="width:40px">紧缺</th>
+      <th style="width:52px">利润池</th><th style="width:52px">扩产难度</th><th style="width:52px">定价权</th>
+      <th style="width:56px">状态</th><th style="width:76px">边际</th><th>龙头</th>
+      <th style="width:150px">估值双锚（FPE / 第二锚）</th><th style="width:70px">定价</th><th>结论</th><th style="width:90px">仓位档</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <div class="sect">
+    <h3>🛡️ 组合规则（敞口 / 仓位 / 对冲 / 触发纪律）</h3>
+    <ul id="prules"></ul>
+  </div>
+  <div class="sect">
+    <h3>📌 操作分层</h3>
+    <ul id="tiers"></ul>
+  </div>
+  <div class="sect">
+    <h3>🧪 可证伪条款（触发即执行）</h3>
+    <ol id="falsifiers"></ol>
+  </div>
+  <div class="foot" id="foot"></div>
+</div>
+</main>
+<script src="data.js"></script>
+<script>
+(function(){
+  var d = window.STOCK_TABLE_DATA || {rows:[]};
+  function col(v){ return v>=8.5?'var(--hot)':v>=6.5?'var(--warm)':v>=4?'var(--neu)':'var(--cool)'; }
+  document.getElementById('title').textContent = (d.title||'') + ' ' + (d.version||'');
+  document.getElementById('sub').textContent = '数据时点 ' + (d.asOf||'');
+  document.getElementById('legend').textContent = d.ruleNote||'';
+  var rows = (d.rows||[]).map(function(r){
+    return '<tr class="'+(r.tier||'')+'">'
+      + '<td class="rank">'+r.rank+'</td>'
+      + '<td><div class="seg">'+r.segment+' <span style="font-weight:400;color:var(--mut);font-size:11px">['+(r.vtype||'')+']</span></div><div class="leaders" style="white-space:normal">'+(r.evidence||'')+'</div></td>'
+      + '<td class="num" style="color:'+col(r.scarcity)+'">'+r.scarcity+'</td>'
+      + '<td class="num" style="color:'+col(r.pool)+'">'+r.pool+'</td>'
+      + '<td class="num" style="color:'+col(r.expand)+'">'+r.expand+'</td>'
+      + '<td class="num" style="color:'+col(r.pricing)+'">'+r.pricing+'</td>'
+      + '<td>'+r.status+'</td>'
+      + '<td>'+r.marginal+'</td>'
+      + '<td class="leaders">'+r.leaders+'</td>'
+      + '<td><div>'+r.fpe+'</div><div class="leaders" style="white-space:normal">'+(r.anchor2||'')+'</div></td>'
+      + '<td>'+r.priced+'</td>'
+      + '<td class="verdict">'+r.verdict+'</td>'
+      + '<td style="font-weight:600;white-space:nowrap">'+(r.sizeBand||'—')+'</td>'
+      + '</tr>';
+  }).join('');
+  document.getElementById('rows').innerHTML = rows;
+  document.getElementById('anchors').innerHTML = (d.scoreAnchors||[]).map(function(s){return '<li>'+s+'</li>';}).join('');
+  document.getElementById('prules').innerHTML = (d.portfolioRules||[]).map(function(s){return '<li>'+s+'</li>';}).join('');
+  document.getElementById('tiers').innerHTML = (d.tiers||[]).map(function(s){return '<li>'+s+'</li>';}).join('');
+  document.getElementById('falsifiers').innerHTML = (d.falsifiers||[]).map(function(s){return '<li>'+s+'</li>';}).join('');
+  document.getElementById('foot').textContent = (d.dataNote||'') + ' ' + (d.disclaimer||'');
+
+  var btn = document.getElementById('saveImg');
+  function loadH2C(){
+    return new Promise(function(res,rej){
+      if(typeof html2canvas!=='undefined') return res();
+      var s=document.createElement('script'); s.src='html2canvas.min.js';
+      s.onload=res; s.onerror=function(){rej(new Error('截图组件加载失败'));};
+      document.head.appendChild(s);
+    });
+  }
+  btn.addEventListener('click', function(){
+    var wrap = document.querySelector('.wrap');
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = '生成中…';
+    var bg = getComputedStyle(document.body).backgroundColor;
+    loadH2C().then(function(){
+    return html2canvas(wrap, {backgroundColor:bg, scale:2, useCORS:true, ignoreElements:function(el){return el.id==='saveImg';}})
+      .then(function(canvas){
+        canvas.toBlob(function(blob){
+          var name = 'AI产业链选股表_'+(d.asOf||'')+'.png';
+          var file; try{ file = new File([blob], name, {type:'image/png'}); }catch(e){}
+          if(file && navigator.canShare && navigator.canShare({files:[file]})){
+            navigator.share({files:[file]}).catch(function(){});
+          } else {
+            var a = document.createElement('a');
+            a.download = name; a.href = URL.createObjectURL(blob); a.click();
+          }
+          btn.disabled = false; btn.textContent = label;
+        }, 'image/png');
+      });
+    })
+      .catch(function(e){ alert('生成失败：'+e); btn.disabled=false; btn.textContent=label; });
+  });
+})();
+</script>
+<script>
+(function(){
+  var KEY='brassivo_sub', API='https://api.brassivo.com/subscribe';
+  function subbed(){return document.cookie.indexOf('brassivo_sub=1')>-1||document.cookie.indexOf('brassivo_pro=1')>-1;}
+  function setsub(){document.cookie='brassivo_sub=1; domain=.brassivo.com; path=/; max-age=2592000; SameSite=Lax';}
+  if(subbed()) return;
+  function init(){
+    var w=document.querySelector('.wrap'); if(!w) return;
+    w.style.maxHeight='110vh'; w.style.overflow='hidden'; w.style.position='relative';
+    var ov=document.createElement('div');
+    ov.style.cssText='position:absolute;left:0;right:0;bottom:0;height:60vh;display:flex;align-items:flex-end;justify-content:center;background:linear-gradient(to bottom, rgba(0,0,0,0), var(--bg) 55%);z-index:99';
+    ov.innerHTML='<div style="text-align:center;padding-bottom:8vh;max-width:420px;width:90%"><div style="font-size:17px;font-weight:600;margin-bottom:6px">解锁全文 · 首月免费</div><div style="font-size:13px;opacity:.75;margin-bottom:14px">留下邮箱即可免费试用1个月，浏览全站完整内容（AI产业链选股表 + 全球流动性看板，每周自动更新）。到期后可订阅专业版（$24.9/月 · 年付$189）。</div><form id="bsubf" style="display:flex;gap:8px;justify-content:center"><input id="bsube" type="email" required placeholder="you@email.com" style="flex:1;padding:9px 12px;border-radius:8px;border:1px solid rgba(128,128,128,.4);background:transparent;color:inherit;font-size:13px"><button style="padding:9px 16px;border-radius:8px;border:none;background:#e0913a;color:#fff;font-weight:600;font-size:13px;cursor:pointer">免费试用</button></form><div id="bsubm" style="font-size:12px;margin-top:8px;opacity:.7"></div><div style="font-size:12px;margin-top:10px"><a href="https://brassivo.com/#" style="color:inherit;opacity:.7">已有激活 Key？去主页激活 →</a></div></div>';
+    w.appendChild(ov);
+    document.getElementById('bsubf').addEventListener('submit', function(e){
+      e.preventDefault();
+      var em=document.getElementById('bsube').value.trim(), m=document.getElementById('bsubm');
+      m.textContent='提交中…';
+      fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em}),signal:(window.AbortSignal&&AbortSignal.timeout)?AbortSignal.timeout(10000):undefined})
+        .then(function(r){return r.json();}).then(function(j){ if(j.ok){ setsub(); w.style.maxHeight=''; w.style.overflow=''; ov.remove(); } else { m.textContent='邮箱格式有误，请重试'; }})
+        .catch(function(){ m.textContent='网络异常，请稍后重试'; });
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script>
+</body>
+</html>

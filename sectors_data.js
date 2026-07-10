@@ -1,6 +1,6 @@
 window.SECTOR_TABLE_DATA = {
-  asOf: "2026-07-06",
-  version: "v1.0",
+  asOf: "2026-07-10",
+  version: "v1.1",
   title: "中国板块表现潜力表",
   ruleNote: "与个股选股表同一框架：潜力 = 质量（利润池持续性 × 边际变化）× 定价未充分程度。持续性 = 紧缺度 × 扩产难度 × 定价权（相乘，任一≤3警戒）。中国板块层口径映射：紧缺度=供需缺口+国产化率缺口；扩产难度=新玩家复制盈利的年限（含牌照/管制）；定价权=板块整体提价或抗降价能力（注意：中国制造业板块普遍有『内卷折价』，同类环节定价权系统性低于美股对标）。估值锚=板块PE/PB分位 vs 自身10年中枢。质量分低频更新；估值列每周联网刷新。",
   scoreAnchors: [
@@ -11,29 +11,29 @@ window.SECTOR_TABLE_DATA = {
     "EPS±：以2026E一致预测净利增速及修正方向为准（沪深300 2026E +9.2%、创业板指+30.5%、科创50 +88.5%为基准线）"
   ],
   rows: [
-    { rank: 1, segment: "电子/半导体", vtype: "成长", scarcity: 8, pool: 8, expand: 8, pricing: 6, status: "✅", marginal: "🟢", leaders: "半导体设备/代工/设计（详见个股表1-8行）", fpe: "申万电子TTM 84.1（99.4%分位）/ PB 8.82（99.9%分位）", anchor2: "半导体二级TTM 168.8（99.4%分位）=历史极值区；唯一救赎是科创50 2026E净利+88.5%的动态消化——但分位数已不给容错", priced: "🔴", verdict: "核心池但贵：加仓走个股表触发价，不追板块", tier: "core", sizeBand: "映射个股表核心池",
+    { rank: 1, segment: "电子/半导体", vtype: "成长", scarcity: 8, pool: 8, expand: 8, pricing: 6, status: "✅", marginal: "🟢", leaders: "半导体设备/代工/设计（详见个股表1-8行）", fpe: "申万电子TTM 84.07（99.4%分位）/ PB 8.82（99.8%分位）", anchor2: "半导体二级TTM 168.8（99.4%分位）=历史极值区；唯一救赎是科创50 2026E净利+88.5%的动态消化——但分位数已不给容错", priced: "🔴", verdict: "核心池但贵：加仓走个股表触发价，不追板块", tier: "core", sizeBand: "映射个股表核心池",
       evidence: "国产算力是2026年共识主线；紧缺度8来自管制卡口+国产化率缺口；定价权6受成熟制程内卷拖累" },
-    { rank: 2, segment: "通信/算力基础设施", vtype: "成长", scarcity: 7, pool: 7, expand: 7, pricing: 7, status: "✅", marginal: "🟢", leaders: "光模块/PCB/IDC（个股表4/10/13行）", fpe: "申万通信TTM 31.6（47.1%分位）；通信设备2026E动态PE<43x", anchor2: "PE分位仅47%但PB分位82.3%（盈利大涨拉低PE）；1.6T光模块2026-27大年", priced: "🟡", verdict: "核心池：质量/估值比优于电子", tier: "core", sizeBand: "映射个股表光模块/PCB仓位",
+    { rank: 2, segment: "通信/算力基础设施", vtype: "成长", scarcity: 7, pool: 7, expand: 7, pricing: 7, status: "✅", marginal: "🟢", leaders: "光模块/PCB/IDC（个股表4/10/13行）", fpe: "申万通信TTM 31.45（46.9%分位）/ PB 2.98（82.2%分位）；通信设备2026E动态PE<43x", anchor2: "PE分位仅47%但PB分位82.3%（盈利大涨拉低PE）；1.6T光模块2026-27大年", priced: "🟡", verdict: "核心池：质量/估值比优于电子", tier: "core", sizeBand: "映射个股表光模块/PCB仓位",
       evidence: "海外+国内双算力需求叠加；旭创1.6T份额约80%、新易盛量增3-4倍（个股表同源数据）" },
-    { rank: 3, segment: "有色金属", vtype: "周期", scarcity: 7, pool: 6, expand: 7, pricing: 6, status: "✅", marginal: "🟢", leaders: "紫金矿业/北方稀土/洛阳钼业", fpe: "TTM 21.3（27.5%分位）/ PB 3.52（72.8%分位）——周期品按PB看", anchor2: "周期锚：PE分位低是盈利大涨的假象、PB 72.8%分位才是真实位置——中段偏后而非早段；工业金属PB已达92.5%分位需警惕", priced: "🟡", verdict: "分歧板块：PB分位72.8%=周期中后段、纪律同美股能源行", tier: "debate", sizeBand: "0-5%",
+    { rank: 3, segment: "有色金属", vtype: "周期", scarcity: 7, pool: 6, expand: 7, pricing: 6, status: "✅", marginal: "🟢", leaders: "紫金矿业/北方稀土/洛阳钼业", fpe: "TTM 19.74（23.5%分位）/ PB 3.27（65.0%分位）——周期品按PB看", anchor2: "周期锚：PE分位低是盈利大涨的假象、PB 65.0%分位（较上周72.8%回落）才是真实位置——中段而非中后段；金价高位支撑，但工业金属PB仍偏高需警惕", priced: "🟡", verdict: "分歧板块：PB分位回落至65%=周期中段、纪律同美股能源行", tier: "debate", sizeBand: "0-5%",
       evidence: "机构7月共识第二梯队；申万PB分位修正了此前『周期早段』判断——工业金属PB 92.5%分位与美股能源的背离结构相似，可参与度下调" },
-    { rank: 4, segment: "军工", vtype: "政策定价", scarcity: 6, pool: 4, expand: 8, pricing: 7, status: "✅", marginal: "🟢", leaders: "中航沈飞/中国船舶", fpe: "申万军工TTM 62.5（48.0%分位）/ PB 4.02（73.0%分位）", anchor2: "PE分位中位不算贵（vs 自身历史）；7月日历效应超额胜率高；全年订单落地+Q2交付提速，中报确定性强", priced: "🟡", verdict: "观察：事件驱动仓，不当核心", tier: "watch", sizeBand: "0 → 触发后2-4%",
+    { rank: 4, segment: "军工", vtype: "政策定价", scarcity: 6, pool: 4, expand: 8, pricing: 7, status: "✅", marginal: "🟢", leaders: "中航沈飞/中国船舶", fpe: "申万军工TTM 61.65（46.2%分位）/ PB 3.96（71.4%分位）", anchor2: "PE分位中位不算贵（vs 自身历史）；7月日历效应超额胜率高；全年订单落地+Q2交付提速，中报确定性强", priced: "🟡", verdict: "观察：事件驱动仓，不当核心", tier: "watch", sizeBand: "0 → 触发后2-4%",
       evidence: "资质壁垒=扩产难度8、定价机制改革后利润率修复=定价权7；但利润池小（pool 4）限制潜力上限" },
-    { rank: 5, segment: "医药生物", vtype: "防御+成长", scarcity: 5, pool: 6, expand: 7, pricing: 5, status: "✅", marginal: "🟢", leaders: "恒瑞/百济/药明系", fpe: "申万医药TTM 28.7（29.4%分位）/ PB 2.64（14.0%分位）", anchor2: "PB仅14%分位=便宜确认；集采压力边际缓和+创新药出海兑现利润=边际转🟢", priced: "🟢", verdict: "观察偏入：中报确认出海利润兑现即升级", tier: "watch", sizeBand: "0 → 触发后4-6%",
+    { rank: 5, segment: "医药生物", vtype: "防御+成长", scarcity: 5, pool: 6, expand: 7, pricing: 5, status: "✅", marginal: "🟢", leaders: "恒瑞/百济/药明系", fpe: "申万医药TTM 28.37（27.2%分位）/ PB 2.60（13.0%分位）", anchor2: "PB仅14%分位=便宜确认；集采压力边际缓和+创新药出海兑现利润=边际转🟢", priced: "🟢", verdict: "观察偏入：中报确认出海利润兑现即升级", tier: "watch", sizeBand: "0 → 触发后4-6%",
       evidence: "政策折价收敛逻辑同美股医疗（Gilead一次性 vs 集采），但中国版多一层出海增量；BD授权金额2026上半年续创新高" },
-    { rank: 6, segment: "公用事业/电力", vtype: "防御", scarcity: 7, pool: 4, expand: 8, pricing: 5, status: "✅", marginal: "🟡", leaders: "长江电力/中国核电", fpe: "申万公用TTM 18.5（45.9%分位）/ PB 1.73（35.9%分位）/ 股息2.84%", anchor2: "与美股公用的关键差异：中国电价由政策定、定价权仅5，AI耗电逻辑传导不畅", priced: "🟡", verdict: "观察：高股息防御腿，非成长表达", tier: "watch", sizeBand: "0 → 触发后3-5%",
+    { rank: 6, segment: "公用事业/电力", vtype: "防御", scarcity: 7, pool: 4, expand: 8, pricing: 5, status: "✅", marginal: "🟡", leaders: "长江电力/中国核电", fpe: "申万公用TTM 18.22（42.2%分位）/ PB 1.70（31.0%分位）/ 股息2.87%", anchor2: "与美股公用的关键差异：中国电价由政策定、定价权仅5，AI耗电逻辑传导不畅", priced: "🟡", verdict: "观察：高股息防御腿，非成长表达", tier: "watch", sizeBand: "0 → 触发后3-5%",
       evidence: "算力耗电增长真实，但电价市场化程度低→板块拿不到美股XLU那种定价权8；水电核电现金流稳定是防御价值" },
-    { rank: 7, segment: "电力设备/储能", vtype: "周期成长", scarcity: 6, pool: 6, expand: 5, pricing: 4, status: "⚠️", marginal: "🟢", leaders: "宁德时代/阳光电源", fpe: "申万电力设备TTM 33.5（52.6%分位）/ PB 3.62（67.3%分位）", anchor2: "储能锂电是7月第二进攻梯队；但光伏『内卷-反内卷』循环未破，板块定价权4是硬伤", priced: "🟡", verdict: "只做龙头不做板块：宁德≠电新板块", tier: "watch", sizeBand: "0 → 触发后3-5%",
+    { rank: 7, segment: "电力设备/储能", vtype: "周期成长", scarcity: 6, pool: 6, expand: 5, pricing: 4, status: "⚠️", marginal: "🟢", leaders: "宁德时代/阳光电源", fpe: "申万电力设备TTM 30.52（41.6%分位）/ PB 3.30（53.1%分位）", anchor2: "较上周明显回落（PE分位52.6→41.6、PB分位67.3→53.1）；储能锂电是7月第二进攻梯队，但光伏『内卷-反内卷』循环未破，板块定价权4是硬伤", priced: "🟡", verdict: "只做龙头不做板块：宁德≠电新板块", tier: "watch", sizeBand: "0 → 触发后3-5%",
       evidence: "储能需求爆发+锂电涨价为真；但板块工具会把光伏亏损资产打包进来——同美股XLB表达不了铜的问题" },
-    { rank: 8, segment: "银行", vtype: "利率敏感", scarcity: 3, pool: 8, expand: 9, pricing: 3, status: "✅", marginal: "🟡", leaders: "工行/招行", fpe: "申万银行PB 0.61（20.2%分位）/ 股息5.85%（94.9%分位）；TTM PE 6.5但分位57.7%", anchor2: "银行用PB+股息锚：PB低分位+股息近历史高位=红利价值真实；但PE分位57.7%提示盈利本身在缩（息差压制），非『白送』", priced: "🟢", verdict: "红利资金配置项，与潜力框架逻辑不同源——列示但不按本表打分操作", tier: "watch", sizeBand: "红利仓另算",
+    { rank: 8, segment: "银行", vtype: "利率敏感", scarcity: 3, pool: 8, expand: 9, pricing: 3, status: "✅", marginal: "🟡", leaders: "工行/招行", fpe: "申万银行PB 0.63（22.9%分位）/ 股息5.65%（88.7%分位）；TTM PE 6.68但分位70.5%", anchor2: "银行用PB+股息锚：板块本周续涨（PB分位20→23、PE分位58→70、股息5.85→5.65%），红利价值仍在但边际变贵；PE分位升至70.5%提示盈利本身在缩（息差压制），非『白送』", priced: "🟢", verdict: "红利资金配置项，与潜力框架逻辑不同源——列示但不按本表打分操作", tier: "watch", sizeBand: "红利仓另算",
       evidence: "定价权3=乘法警戒，但银行盈利模式不适用制造业框架；股息率>4%+PB底部提供绝对收益下限" },
-    { rank: 9, segment: "食品饮料/白酒", vtype: "防御", scarcity: 3, pool: 6, expand: 5, pricing: 6, status: "⚠️", marginal: "🔴", leaders: "茅台/五粮液", fpe: "申万食饮TTM 18.6（8.2%分位）/ PB 3.21（5.8%分位）/ 股息5.04%（99.9%分位）", anchor2: "三项指标全部历史极值区=深度便宜确认；但龙头量价周期下行未结束，便宜不是买入理由（边际🔴一票压制）", priced: "🟢", verdict: "暂不跟：便宜但边际🔴，等动销数据转正", tier: "out", sizeBand: "0",
+    { rank: 9, segment: "食品饮料/白酒", vtype: "防御", scarcity: 3, pool: 6, expand: 5, pricing: 6, status: "⚠️", marginal: "🔴", leaders: "茅台/五粮液", fpe: "申万食饮TTM 18.59（8.3%分位）/ PB 3.21（6.0%分位）/ 股息5.03%（99.8%分位）", anchor2: "三项指标全部历史极值区=深度便宜确认；但龙头量价周期下行未结束，便宜不是买入理由（边际🔴一票压制）", priced: "🟢", verdict: "暂不跟：便宜但边际🔴，等动销数据转正", tier: "out", sizeBand: "0",
       evidence: "机构共识仅作防御配置、弹性弱于科技储能；EPS边际🔴一票压制潜力分" },
-    { rank: 10, segment: "非银金融", vtype: "贝塔", scarcity: 4, pool: 6, expand: 6, pricing: 4, status: "✅", marginal: "🟡", leaders: "中信证券/东方财富", fpe: "申万非银TTM 10.5（2.0%分位，历史最低区）/ PB 1.27（12.9%分位）", anchor2: "PE分位2%为31个行业最低——但低分位同样是牛市盈利高基数的产物；成交额回落则PE被动抬升", priced: "🟢", verdict: "暂不跟：要贝塔不如直接调总仓位", tier: "out", sizeBand: "0",
+    { rank: 10, segment: "非银金融", vtype: "贝塔", scarcity: 4, pool: 6, expand: 6, pricing: 4, status: "✅", marginal: "🟡", leaders: "中信证券/东方财富", fpe: "申万非银TTM 10.19（1.2%分位，历史最低区）/ PB 1.24（10.3%分位）", anchor2: "PE分位1.2%为31个行业最低——但低分位同样是牛市盈利高基数的产物；成交额回落则PE被动抬升", priced: "🟢", verdict: "暂不跟：要贝塔不如直接调总仓位", tier: "out", sizeBand: "0",
       evidence: "定价权4（佣金战未止）；牛市放大器属性与本框架『利润池持续性』相悖" },
-    { rank: 11, segment: "煤炭/石油", vtype: "周期", scarcity: 6, pool: 5, expand: 6, pricing: 4, status: "⚠️", marginal: "🟡", leaders: "中国神华/中国海油", fpe: "煤炭TTM 16.4（67.1%分位）/股息5.62%；石油石化TTM 12.2（32.0%分位）/股息4.51%", anchor2: "煤炭PE分位67%不便宜（盈利已在缩）；油价$92高位利好海油，但国内煤价受长协价压制=定价权4", priced: "🟡", verdict: "暂不跟：红利属性弱于银行、周期弹性弱于有色", tier: "out", sizeBand: "0",
+    { rank: 11, segment: "煤炭/石油", vtype: "周期", scarcity: 6, pool: 5, expand: 6, pricing: 4, status: "⚠️", marginal: "🟡", leaders: "中国神华/中国海油", fpe: "煤炭TTM 16.78（68.0%分位）/股息5.51%；石油石化TTM 12.30（33.6%分位）/股息4.45%", anchor2: "煤炭PE分位67%不便宜（盈利已在缩）；油价$92高位利好海油，但国内煤价受长协价压制=定价权4", priced: "🟡", verdict: "暂不跟：红利属性弱于银行、周期弹性弱于有色", tier: "out", sizeBand: "0",
       evidence: "夹在中间的板块：既非最佳红利也非最佳周期表达" },
-    { rank: 12, segment: "房地产/建筑链", vtype: "出清中", scarcity: 2, pool: 2, expand: 4, pricing: 2, status: "❌", marginal: "🔴", leaders: "保利/万科", fpe: "申万地产TTM 10.5（22.4%分位）/ PB 0.94破净（10.4%分位）", anchor2: "供给过剩+需求中枢下移，出清未完成；破净不等于底，盈利趋零时PB失锚", priced: "🟡", verdict: "紧缺度2+定价权2双重出局", tier: "out", sizeBand: "0",
+    { rank: 12, segment: "房地产/建筑链", vtype: "出清中", scarcity: 2, pool: 2, expand: 4, pricing: 2, status: "❌", marginal: "🔴", leaders: "保利/万科", fpe: "申万地产TTM 10.46（22.4%分位）/ PB 0.94破净（11.6%分位）", anchor2: "供给过剩+需求中枢下移，出清未完成；破净不等于底，盈利趋零时PB失锚", priced: "🟡", verdict: "紧缺度2+定价权2双重出局", tier: "out", sizeBand: "0",
       evidence: "利润池为负或趋零；政策托底只改变斜率不改变方向；等真正出清信号（新开工/库存/房价三指标企稳）" }
   ],
   portfolioRules: [
@@ -58,6 +58,6 @@ window.SECTOR_TABLE_DATA = {
     "美股AI链任一核心证伪条款触发（个股表条款#4/#5）→ 中国算力链同步复检（全球共振风险）",
     "地产新开工/库存/房价三指标同时企稳两季 → 房地产升级为可分析对象"
   ],
-  dataNote: "估值：申万一级行业TTM PE/PB及历史分位（乐咕乐股，2026-07-03数据，分位为10年口径）——电子PE 84.1/99.4%分位、半导体168.8/99.4%、通信31.6/47.1%、有色PB 3.52/72.8%、医药PB 2.64/14.0%、银行PB 0.61/20.2%+股息5.85%、食饮三指标全历史极值、非银PE分位2.0%全场最低 · 盈利预期：机构2026E一致预测（沪深300 +9.2%/创业板+30.5%/科创50 +88.5%；通信设备动态PE<43x）· 基本面：2026年7月机构月度策略共识（国产算力+有色进攻主线、军工日历效应、医药集采缓和+出海兑现、消费仅防御）",
+  dataNote: "估值：申万一级行业TTM PE/PB及历史分位（乐咕乐股，2026-07-10数据，分位为10年口径）——电子PE 84.07/99.4%分位、通信31.45/46.9%、有色PB 3.27/65.0%（较上周72.8%回落）、电力设备PE 30.52/41.6%（明显回落）、军工61.65/46.2%、医药PB 2.60/13.0%、银行PB 0.63/22.9%+股息5.65%（板块续涨、PE分位升至70.5%）、食饮三指标全历史极值、非银PE分位1.2%全场最低、地产破净PB 0.94 · 盈利预期：机构2026E一致预测基本持平（沪深300 +9.18%/创业板+30.52%/科创50 +88.46%；Wind另有科创50 >170%口径，电子权重70%+为拉动核心）· 市场：7/2科创50单日暴跌7.7%（年内最大）、半导体/算力资金出逃转向医药/机器人/贵金属防御，北向7/1净流出591亿后回流——距条款10（跌破年线+北向连续8周流出）尚远但动量转弱需盯 · 基本面：2026年7月机构月度策略共识（国产算力+有色进攻主线、军工日历效应、医药集采缓和+出海兑现、消费仅防御）",
   disclaimer: "⚠️ 本表为板块层参考视图，非买卖建议；个股决策以中国个股选股表为准；非持牌投顾意见。"
 };

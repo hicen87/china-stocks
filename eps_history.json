@@ -35,6 +35,18 @@
         "688126": null,
         "0700.HK": { "pageDate": "2026-07-13", "price": 457.60, "fpe": 13.28, "ntmEps": 34.46 }
       }
+    },
+    {
+      "date": "2026-07-17",
+      "note": "本周StockAnalysis返回的缓存pageDate全部旧于7/13已入库观测（缓存回退），无新观测入库：有页面但缓存旧的记unchanged，404或FPE无意义的记null。腾讯用既有6/7与7/13两点（36天）首次计算NTM修正-1.2%写入个股表边际列。",
+      "data": {
+        "002371": "unchanged", "0981.HK": "unchanged", "688256": null,
+        "300308": "unchanged", "600584": null, "301269": null,
+        "603986": null, "688008": null, "601138": null,
+        "002463": "unchanged", "002837": "unchanged", "002851": "unchanged",
+        "300442": "unchanged", "688126": null,
+        "0700.HK": "unchanged"
+      }
     }
   ]
 }

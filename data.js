@@ -1,5 +1,5 @@
 window.STOCK_TABLE_DATA = {
-  asOf: "2026-07-14",
+  asOf: "2026-07-17",
   version: "v1.3",
   title: "中国AI产业链选股表",
   ruleNote: "覆盖A股/港股/中概。潜力 = 质量（利润池持续性 × 边际变化）× 定价未充分程度。持续性 = 紧缺度 × 扩产难度 × 定价权（相乘，任一≤3判不可持续）。与 Global Stocks 同一套框架，另加中国特有约束：国产替代进度=紧缺度的放大器；出口管制既是护城河也是天花板。质量分低频更新；估值列与依据列每周联网刷新。",
@@ -10,14 +10,14 @@ window.STOCK_TABLE_DATA = {
     "估值双锚（按环节类型）：平台/软件=FPE vs 自身5年中枢；制造/设备=FPE + 在手订单能见度；周期品=毛利率历史分位 + P/B（禁用FPE排序，GM>80分位=顶部警戒）；未盈利科创板标的=PS + 研发管线里程碑，仓位额外减半"
   ],
   rows: [
-    { rank: 1, segment: "半导体设备", vtype: "设备", scarcity: 9, pool: 8, expand: 9, pricing: 8, status: "✅", marginal: "🟢", leaders: "北方华创/中微/拓荆", fpe: "北方58.8 / 中微93（原口径）", anchor2: "能见度：北方在手订单约820亿、排产至2028（市场口径）；合同负债47亿(25Q3)回落但中微26H1新签订单41亿(+40%)，条款2未触发", priced: "🟡", verdict: "逻辑最硬、估值不便宜", tier: "core", sizeBand: "6-10%",
-      evidence: "26Q1北方华创营收103.2亿(+25.8%)、净利16.4亿(+3.4%)；中微26H1新签订单41亿(+40%)、刻蚀+51%；7/3北方一度跌停属情绪、订单基本面未变" },
+    { rank: 1, segment: "半导体设备", vtype: "设备", scarcity: 9, pool: 8, expand: 9, pricing: 8, status: "✅", marginal: "🟢", leaders: "北方华创/中微/拓荆", fpe: "北方58.8 / 中微93（原口径）", anchor2: "能见度：北方在手订单超820亿（同比+58%）、覆盖2-2.5年、排产至2028；26Q1新签约195亿；中微26H1新签订单41亿(+40%)，条款2未触发", priced: "🟡", verdict: "逻辑最硬、估值不便宜", tier: "core", sizeBand: "6-10%",
+      evidence: "26Q1北方华创营收103.2亿(+25.8%)、净利16.4亿(+3.4%)、新签订单约195亿、在手订单超820亿(+58%)；中微26H1新签订单41亿(+40%)、刻蚀+51%；7/3北方一度跌停属情绪、订单基本面未变" },
     { rank: 2, segment: "晶圆代工", vtype: "制造", scarcity: 9, pool: 7, expand: 9, pricing: 6, status: "✅", marginal: "🟢", leaders: "中芯 0981.HK / 华虹 1347.HK", fpe: "中芯H 66.2 / 华虹原口径", anchor2: "能见度：利用率93.1%远高于80%触发线；capex约81亿美元持平未下调", priced: "🟡", verdict: "瓶颈强化，优先H股", tier: "core", sizeBand: "6-10%",
       evidence: "中芯26Q1产能利用率93.1%（同比+3.5pct），月产能107.8万片；Q2指引收入环比+14~16%、毛利率20-22%明显上修；2026 capex约81亿美元持平；两地价差大" },
     { rank: 3, segment: "AI算力芯片", vtype: "制造", scarcity: 8, pool: 8, expand: 8, pricing: 7, status: "✅", marginal: "🟢", leaders: "寒武纪 / 海光信息", fpe: "寒武300+ / 海光266", anchor2: "PS：寒武2026E~30x+；出货未低于指引，条款3安全；出口管制收紧使英伟达中国份额降至~0，条款9反向强化国产替代（非放松）", priced: "🔴", verdict: "按条款3+9持有、不加仓", tier: "debate", sizeBand: "3-5%",
-      evidence: "寒武纪26Q1营收28.85亿(+160%)、净利10.1亿已扭亏、海光26Q1营收40.34亿；英伟达对华份额从66%锐减至~0，国产AI卡受益；寒武7月初跌破万亿市值并自主提示稀缺性溢价风险，估值高位波动加大" },
-    { rank: 4, segment: "光模块", vtype: "制造", scarcity: 7, pool: 8, expand: 6, pricing: 7, status: "✅", marginal: "🟢", leaders: "中际旭创/新易盛/天孚", fpe: "旭创34.2 / 新易盛22-24（原口径）", anchor2: "能见度：旭创在手订单已下至年底、头部厂商能见度12个月+，条款4安全", priced: "🟢", verdict: "质量/估值比最优、新易盛更低", tier: "core", sizeBand: "6-10%",
-      evidence: "旭创1.6T量产出货、已锁定2026全年订单、部分客户订单下至年底；新易盛26Q1营收83.4亿(+106%)、净利27.8亿(+77%)、GM约49%；2026年全球1.6T需求望达500万只；瓶颈在供给端非需求端" },
+      evidence: "海光7/16中报预增：H1净利17-18.3亿(+41.5%~52.3%)、Q2环比+47%创单季新高、营收+55.6%~70.2%、扣非口径+74~84%，出货未低于指引；寒武纪26Q1营收28.85亿(+160%)已扭亏；英伟达对华份额~0，国产AI卡受益；寒武7月初跌破万亿市值并自主提示稀缺性溢价风险" },
+    { rank: 4, segment: "光模块", vtype: "制造", scarcity: 7, pool: 8, expand: 6, pricing: 7, status: "✅", marginal: "🟢", leaders: "中际旭创/新易盛/天孚", fpe: "旭创34.2 / 新易盛22-24（原口径）", anchor2: "能见度：7/12旭创澄清『小作文』：1.6T需求未减仅客户结构调整、在手订单覆盖2026全年、部分客户已给2027季度指引，条款4未触发", priced: "🟢", verdict: "质量/估值比最优、新易盛更低", tier: "core", sizeBand: "6-10%",
+      evidence: "7/12-13砍单传闻致市值一度蒸发千亿，公司澄清：1.6T需求强劲、800G需求超预期增加、订单覆盖全年+2027部分能见度；新易盛26Q1营收83.4亿(+106%)、净利27.8亿(+77%)；瓶颈在供给端非需求端，中报为验证节点" },
     { rank: 5, segment: "先进封装/封测", vtype: "制造", scarcity: 7, pool: 6, expand: 7, pricing: 6, status: "✅", marginal: "🟢", leaders: "长电科技 / 通富微电", fpe: "长电~45 / 通富(净利+80%)", anchor2: "能见度：长电PE(2026E)~45x、目标价49.2；通富先进封装放量", priced: "🟡", verdict: "利润率拐点初现", tier: "debate", sizeBand: "3-5%",
       evidence: "通富2025年收入279亿(+17%)、净利12.2亿(+80%)，HybridSiP/高叠层推进；长电为国内封测龙头" },
     { rank: 6, segment: "EDA/IP", vtype: "平台", scarcity: 8, pool: 5, expand: 9, pricing: 6, status: "⚠️", marginal: "🔴", leaders: "华大九天 / 芯原股份", fpe: "华大极高(业绩暴跌)", anchor2: "中枢：华大25年前三季净利-84.5%，估值严重透支；芯原未盈利按PS", priced: "🔴", verdict: "长逻辑短兑现、太贵", tier: "debate", sizeBand: "0-3%",
@@ -38,7 +38,7 @@ window.STOCK_TABLE_DATA = {
       evidence: "智算中心供给快速放量、竞争同质化；重资产低门槛，条款8（上架率<50%）为清零线" },
     { rank: 14, segment: "半导体材料", vtype: "制造", scarcity: 7, pool: 4, expand: 7, pricing: 5, status: "✅", marginal: "🟢", leaders: "沪硅/安集/南大光电", fpe: "沪硅(净利CAGR~25%)", anchor2: "导入进度：光刻胶/大硅片国产化率低、替代确定但单环节利润池小", priced: "🟡", verdict: "逻辑硬、弹性小、配角", tier: "watch", sizeBand: "2-4%",
       evidence: "关键材料国产替代确定性高但单点利润池有限；组合配角，不宜重仓" },
-    { rank: 15, segment: "云平台/大模型", vtype: "平台", scarcity: 6, pool: 9, expand: 8, pricing: 6, status: "✅", marginal: "🟢", leaders: "腾讯 0700.HK / 阿里 9988.HK", fpe: "腾讯13.3 / 阿里原口径", anchor2: "中枢：阿里云增速加速至38-40%、AI收入占外部云超30%，capex持续上调，条款6(增速<10%)远未触发", priced: "🟢", verdict: "基本面/估值背离最大", tier: "core", sizeBand: "6-10%",
+    { rank: 15, segment: "云平台/大模型", vtype: "平台", scarcity: 6, pool: 9, expand: 8, pricing: 6, status: "✅", marginal: "🔴 NTM~36d -1.2%", leaders: "腾讯 0700.HK / 阿里 9988.HK", fpe: "腾讯13.3 / 阿里原口径", anchor2: "中枢：阿里云增速加速至38-40%、AI收入占外部云超30%，capex持续上调，条款6(增速<10%)远未触发", priced: "🟢", verdict: "基本面/估值背离最大", tier: "core", sizeBand: "6-10%",
       evidence: "阿里云四财季+38%、外部客户+40%、AI相关收入89.7亿(占外部云30%+)，capex指引或超3800亿；腾讯26Q1 capex 319亿(+16%)、下半年再增；『没有一张卡是空的』" }
   ],
   portfolioRules: [
@@ -65,6 +65,6 @@ window.STOCK_TABLE_DATA = {
     "9. 出口管制出现实质性放松（英伟达高端卡恢复对华销售）→ 全表国产替代逻辑重估",
     "10. 恒生科技/科创50跌破年线且北向连续8周流出 → 总敞口压至20%以下"
   ],
-  dataNote: "v1.3（2026-07-14隔日复核）：StockAnalysis已更新至7/13，9只代表票获得新NTM观测，6只沪市页面404保留原值并记null。主要估值：北方58.8、中芯H 66.2、旭创34.2、沪电32.3、英维克71.7、麦格米特91.5、润泽44.0、腾讯13.3。华大九天因业绩异常仍不使用FPE。历史仅2个观测期，不计算30/90天EPS修正；质量分、tier、仓位和条款判断不变。",
+  dataNote: "v1.3（2026-07-17周更）：StockAnalysis本周返回缓存全部旧于7/13已入库观测（缓存回退现象），估值列保留7/13口径不回退，EPS序列全票记unchanged。腾讯首次获得跨度≥30天的NTM修正读数：6/7→7/13（36天）NTM EPS 34.89→34.46（-1.2%，HKD口径，可能含汇率与缓存噪音），机械写入边际列。新增硬数据：北方在手订单超820亿(+58%)、海光中报预增+41.5~52.3%、旭创7/12澄清1.6T未砍单。10条可证伪条款均未触发；质量分、tier、仓位不变。",
   disclaimer: "仅为个人研究参考，非投资建议。"
 };
